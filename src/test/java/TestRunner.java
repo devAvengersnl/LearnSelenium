@@ -10,12 +10,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
         features = "src/test/resources/features",
         glue = {"step_definitions"},
         monochrome = true,
-        plugin = {"html:target/cucumber-html-report",
+        plugin = {"pretty", "html:target/cucumber-html-report",
                 "json:target/cucumber-json-report.json"})
 public class TestRunner {
 
-    @BeforeClass
-    public static void setupClass() {
-        WebDriverManager.chromedriver().setup();
-    }
 }
