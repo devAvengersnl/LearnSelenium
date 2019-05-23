@@ -2,7 +2,7 @@ package step_definitions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -15,7 +15,7 @@ public class DEF_cucumberJava {
     @Given("^I have open the browser$")
     public void i_have_open_the_browser() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        driver = new SafariDriver();
+        driver = new ChromeDriver();
     }
 
     @When("I open Facebook website")
