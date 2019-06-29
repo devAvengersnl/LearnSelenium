@@ -5,7 +5,7 @@ Feature: As a user I want to add a new computer to computer database website
 #    Given I have open the browser
 #    When I open Facebook website
 #    Then Login button should exits
-
+  @computerDb
   Scenario: Add a computer
     Given I have open the "chrome" browser
     When I open Computer database website
@@ -13,6 +13,7 @@ Feature: As a user I want to add a new computer to computer database website
     When I fill computer details
     Then I should be able to add a computer
 
+  @computerDb
   Scenario: Add a computer
     Given I have open the "firefox" browser
     When I open Computer database website

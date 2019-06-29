@@ -48,10 +48,10 @@ public class DEF_cucumberJava {
         Assert.assertTrue(driver.findElement(By.cssSelector("#loginbutton")).isDisplayed());
     }
 
-    @After
-    public void tearDown() {
-        driver.quit();
-    }
+//    @After
+//    public void tearDown() {
+//        driver.quit();
+//    }
 
     @When("^I open Computer database website$")
     public void iOpenComputerDatabaseWebsite() throws Throwable {
@@ -78,13 +78,13 @@ public class DEF_cucumberJava {
         createNewComputerPage = landingPage.clickAddNewComputer();
     }
 
-    @Given("^I have open the \"([^\"]*)\" browser$")
-    public void iHaveOpenTheBrowser(String browserName) throws Throwable {
-        if(browserName.equals("chrome")){
-            driver = new ChromeDriver();
-        } else if(browserName.equals("firefox")) {
-            driver = new FirefoxDriver();
-        }
-
-    }
+//    @Given("^I have open the \"([^\"]*)\" browser$")
+//    public void iHaveOpenTheBrowser(String browserName) throws Throwable {
+//        if(browserName.equals("chrome")){
+//            driver = new ChromeDriver();
+//        } else if(browserName.equals("firefox")) {
+//            driver = new FirefoxDriver();
+//        }
+//
+//    }
 }
