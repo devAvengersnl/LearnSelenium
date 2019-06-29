@@ -2,3 +2,5 @@
 .idea/
 LearnSelenium.iml
 target/
+bin/
+.project
