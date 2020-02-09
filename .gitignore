@@ -4,3 +4,5 @@ LearnSelenium.iml
 target/
 bin/
 .project
+.allure
+allure-results
