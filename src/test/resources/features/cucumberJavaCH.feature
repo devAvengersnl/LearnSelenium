@@ -1,4 +1,4 @@
-Feature: As a user I want to add a new computer to computer database website
+Feature: As a user I want to add a new computer to computer database website Supporting chrome and firefox
 
 #  @smokeCICD
 #  Scenario: Login functionality exists
@@ -13,9 +13,9 @@ Feature: As a user I want to add a new computer to computer database website
     When I fill computer details
     Then I should be able to add a computer
 
-#  Scenario: Add a computer
-#    Given I have open the "firefox" browser
-#    When I open Computer database website
-#    When I click add button
-#    When I fill computer details
-#    Then I should be able to add a computer
+  Scenario: Add a computer
+    Given I have open the "firefox" browser
+    When I open Computer database website
+    When I click add button
+    When I fill computer details
+    Then I should be able to add a computer

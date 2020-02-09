@@ -1,8 +1,14 @@
-Feature: As a user I want to add a new computer to computer database website
+Feature: As a user I want to verify Facebook page
 
   @smokeCICD
   Scenario: Login functionality exists
-    Given I have open the browser
+    Given I have open the "chrome" browser
+    When I open Facebook website
+    Then Login button should exits
+
+  @smokeCICD
+  Scenario: Login functionality exists
+    Given I have open the "firefox" browser
     When I open Facebook website
     Then Login button should exits
 
@@ -12,10 +18,10 @@ Feature: As a user I want to add a new computer to computer database website
 #    When I click add button
 #    When I fill computer details
 #    Then I should be able to add a computer
-
-  Scenario: Add a computer
-    Given I have open the "firefox" browser
-    When I open Computer database website
-    When I click add button
-    When I fill computer details
-    Then I should be able to add a computer
+#
+#  Scenario: Add a computer
+#    Given I have open the "firefox" browser
+#    When I open Computer database website
+#    When I click add button
+#    When I fill computer details
+#    Then I should be able to add a computer
